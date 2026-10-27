@@ -396,7 +396,7 @@ async def register(request: Request):
             "exp": now + 86400,
         },
         JWT_SECRET,
-        algorithm="H256"
+        algorithm="HS256"
     )
 
     return JSONResponse(
